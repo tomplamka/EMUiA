@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>emuiaDialogBase</class>
+ <widget class="QDialog" name="emuiaDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>449</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>emuia</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>331</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Dane wnioskodawcy</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>301</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="nazwaAdresataLabel">
+       <property name="text">
+        <string>Nazwa Adresata</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nazwaAdresataLineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="imieLabel">
+       <property name="text">
+        <string>Imię</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="imieLineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="nazwiskoLabel">
+       <property name="text">
+        <string>Nazwisko</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="nazwiskoLineEdit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="ulicaLabel">
+       <property name="text">
+        <string>Ulica</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="ulicaLineEdit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="numerBudynkuLabel">
+       <property name="text">
+        <string>Numer budynku</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="numerBudynkuLineEdit"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="numerLokaluLabel">
+       <property name="text">
+        <string>Numer lokalu</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="numerLokaluLineEdit"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="miejscowoscLabel">
+       <property name="text">
+        <string>Miejscowość</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="miejscowoscLineEdit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="kodLabel">
+       <property name="text">
+        <string>Kod</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="kodLineEdit">
+       <property name="placeholderText">
+        <string>__-___</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="telefonLabel">
+       <property name="text">
+        <string>telefon</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="telefonLineEdit"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="emailLabel">
+       <property name="text">
+        <string>email</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="emailLineEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>421</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Dane dotyczące położenia nieruchomości</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>304</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="dataWnioskuLabel">
+       <property name="text">
+        <string>Data wniosku</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="miejscowoscWnLabel">
+       <property name="text">
+        <string>Miejscowość</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="miejscowoscWnLineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="ulicaWnLabel">
+       <property name="text">
+        <string>Ulica</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="ulicaWnLineEdit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="obrebLabel">
+       <property name="text">
+        <string>Obręb</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="obrebComboBox"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="numerDzialkiLabel">
+       <property name="text">
+        <string>Numer działki</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="numerDzialkiLineEdit"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="statusBudowyLabel">
+       <property name="text">
+        <string>Status budowy</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="statusBudowyComboBox"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="zalKopiaMapyLabel">
+       <property name="text">
+        <string>Załącznik - kopia mapy</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="zalKopiaMapyLineEdit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="zalMPZPLabel">
+       <property name="text">
+        <string>Załącznik - MPZP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="zalMPZPLineEdit"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="dataWnioskuLineEdit">
+       <property name="placeholderText">
+        <string>dd-mm-rrrr</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnSaveZal1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>180</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSaveZal2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>210</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnRejestruj">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>30</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rejestruj
+wniosek</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClearForm">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>90</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Wyczyść
+formularz</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
