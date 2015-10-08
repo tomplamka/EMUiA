@@ -88,7 +88,7 @@ class emuia:
         self.dlg.telefonLineEdit.clear()
         self.dlg.emailLineEdit.clear()
         
-        #self.dlg.dataZlozeniaWnioskuLineEdit.clear()
+        self.dlg.dataWnioskuLineEdit.clear()
         self.dlg.miejscowoscWnLineEdit.clear()
         self.dlg.ulicaWnLineEdit.clear()
         
@@ -304,7 +304,7 @@ class emuia:
             rok = datetime.now().year
             
             #numer kolejnej sprawy
-            #cur.execute("select datenow from emuia order by datenow desc limit 1")
+            #cur.execute("select datenow from rejestr_emuia order by datenow desc limit 1")
             #con.commit()
             #datenowVal = cur.fetchone()[0]
             #datenowVal = str(datenowVal)
@@ -312,7 +312,7 @@ class emuia:
             #if (year < rok):
             #    nrSpr = 0
             #else:
-            #    cur.execute("select idznspr from emuia order by idznspr desc limit 1")
+            #    cur.execute("select idznspr from rejestr_emuia order by idznspr desc limit 1")
             #    con.commit()
             #    idZnSpr = cur.fetchone()[0]
             #    nrSpr = idZnSpr + 1
@@ -328,7 +328,7 @@ class emuia:
                 iface.messageBar().pushMessage('Puste pole', u'Proszę wypełnić wszystkie pola formularza', level=QgsMessageBar.CRITICAL, duration=10)
             else:
             
-                query = "INSERT INTO emuia (nameadr, imie, nazwisko, ulica, nrbud, nrlok, miejscowosc, kod, phone, email, datawniosku, miejscowoscwn, ulicawn, rejon, numdzialki, statusbud, dokplan, zalwniosek, datenow, username, arkusz) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+                query = "INSERT INTO rejestr_emuia (nameadr, imie, nazwisko, ulica, nrbud, nrlok, miejscowosc, kod, phone, email, datawniosku, miejscowoscwn, ulicawn, rejon, numdzialki, statusbud, dokplan, zalwniosek, datenow, username, arkusz) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
                 data = (newlineNameAdr, newlineImie_2, newlineNazwisko_2, newlineUlica, newlineNrBud, nrLok, newlineMiejscowosc, newlineKod, telefon, email, newlineDataWniosku, miejscowoscWn, ulicaWn, newcbRejon, newlineNumDzialek, newcbStatus, zal1, zal2, dataRejestracji, username, arkusz)
 
                 cur.execute(query, data)
@@ -365,6 +365,7 @@ class emuia:
         self.dlg.telefonLineEdit.clear()
         self.dlg.emailLineEdit.clear()
         
+        self.dlg.dataWnioskuLineEdit.clear()
         self.dlg.miejscowoscWnLineEdit.clear()
         self.dlg.ulicaWnLineEdit.clear()    
         self.dlg.numerDzialkiLineEdit.clear()
