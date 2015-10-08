@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>449</width>
-    <height>570</height>
+    <height>588</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -148,7 +148,7 @@
      <x>10</x>
      <y>320</y>
      <width>421</width>
-     <height>241</height>
+     <height>261</height>
     </rect>
    </property>
    <property name="title">
@@ -160,14 +160,24 @@
       <x>20</x>
       <y>20</y>
       <width>304</width>
-      <height>211</height>
+      <height>231</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout_2">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
      <item row="0" column="0">
       <widget class="QLabel" name="dataWnioskuLabel">
        <property name="text">
         <string>Data wniosku</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="dataWnioskuLineEdit">
+       <property name="placeholderText">
+        <string>dd-mm-rrrr</string>
        </property>
       </widget>
      </item>
@@ -211,42 +221,45 @@
      <item row="4" column="1">
       <widget class="QLineEdit" name="numerDzialkiLineEdit"/>
      </item>
-     <item row="5" column="0">
+     <item row="6" column="0">
       <widget class="QLabel" name="statusBudowyLabel">
        <property name="text">
         <string>Status budowy</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
+     <item row="6" column="1">
       <widget class="QComboBox" name="statusBudowyComboBox"/>
      </item>
-     <item row="6" column="0">
+     <item row="7" column="0">
       <widget class="QLabel" name="zalKopiaMapyLabel">
        <property name="text">
         <string>Załącznik - kopia mapy</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
+     <item row="7" column="1">
       <widget class="QLineEdit" name="zalKopiaMapyLineEdit"/>
      </item>
-     <item row="7" column="0">
+     <item row="8" column="0">
       <widget class="QLabel" name="zalMPZPLabel">
        <property name="text">
         <string>Załącznik - MPZP</string>
        </property>
       </widget>
      </item>
-     <item row="7" column="1">
+     <item row="8" column="1">
       <widget class="QLineEdit" name="zalMPZPLineEdit"/>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="dataWnioskuLineEdit">
-       <property name="placeholderText">
-        <string>dd-mm-rrrr</string>
+     <item row="5" column="0">
+      <widget class="QLabel" name="numerArkuszaLabel">
+       <property name="text">
+        <string>Numer arkusza</string>
        </property>
       </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="numerArkuszaLineEdit"/>
      </item>
     </layout>
    </widget>
@@ -254,7 +267,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>180</y>
+      <y>200</y>
       <width>31</width>
       <height>23</height>
      </rect>
@@ -267,7 +280,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>210</y>
+      <y>230</y>
       <width>31</width>
       <height>23</height>
      </rect>

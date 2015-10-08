@@ -97,6 +97,7 @@ class emuia:
         self.dlg.obrebComboBox.addItem(u'Szczygłowice')
         
         self.dlg.numerDzialkiLineEdit.clear()
+        self.dlg.numerArkuszaLineEdit.clear()
         
         self.dlg.statusBudowyComboBox.addItem(u'istniejacy')
         self.dlg.statusBudowyComboBox.addItem(u'prognozowany')
@@ -265,6 +266,7 @@ class emuia:
         ulicaWn = self.dlg.ulicaWnLineEdit.text()        
         newcbRejon = self.dlg.obrebComboBox.currentText()
         newlineNumDzialek = self.dlg.numerDzialkiLineEdit.text()
+        arkusz = self.dlg.numerArkuszaLineEdit.text()
         newcbStatus = self.dlg.statusBudowyComboBox.currentText()
         
         zal1 = self.dlg.zalKopiaMapyLineEdit.text()
@@ -322,12 +324,12 @@ class emuia:
             #elif (newlineRodzDok == u'Zaświadczenie'):
             #    newlineZnakSpr = 'UA.6727.3.' + str(nrSpr) + '.' + str(rok)
             
-            if all([not newlineImie_2, not newlineNazwisko_2, not newlineUlica, not newlineNrBud, not newlineMiejscowosc, not newlineKod, not newlineDataWniosku, not miejscowoscWn, not ulicaWn, not newcbRejon, not newlineNumDzialek, not newcbStatus]):
+            if all([not newlineImie_2, not newlineNazwisko_2, not newlineUlica, not newlineNrBud, not newlineMiejscowosc, not newlineKod, not newlineDataWniosku, not miejscowoscWn, not ulicaWn, not newcbRejon, not newlineNumDzialek, not newcbStatus, not arkusz]):
                 iface.messageBar().pushMessage('Puste pole', u'Proszę wypełnić wszystkie pola formularza', level=QgsMessageBar.CRITICAL, duration=10)
             else:
             
-                query = "INSERT INTO emuia (nameadr, imie, nazwisko, ulica, nrbud, nrlok, miejscowosc, kod, phone, email, datawniosku, miejscowoscwn, ulicawn, rejon, numdzialki, statusbud, dokplan, zalwniosek, datenow, username) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
-                data = (newlineNameAdr, newlineImie_2, newlineNazwisko_2, newlineUlica, newlineNrBud, nrLok, newlineMiejscowosc, newlineKod, telefon, email, newlineDataWniosku, miejscowoscWn, ulicaWn, newcbRejon, newlineNumDzialek, newcbStatus, zal1, zal2, dataRejestracji, username)
+                query = "INSERT INTO emuia (nameadr, imie, nazwisko, ulica, nrbud, nrlok, miejscowosc, kod, phone, email, datawniosku, miejscowoscwn, ulicawn, rejon, numdzialki, statusbud, dokplan, zalwniosek, datenow, username, arkusz) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+                data = (newlineNameAdr, newlineImie_2, newlineNazwisko_2, newlineUlica, newlineNrBud, nrLok, newlineMiejscowosc, newlineKod, telefon, email, newlineDataWniosku, miejscowoscWn, ulicaWn, newcbRejon, newlineNumDzialek, newcbStatus, zal1, zal2, dataRejestracji, username, arkusz)
 
                 cur.execute(query, data)
                 con.commit()
@@ -366,6 +368,7 @@ class emuia:
         self.dlg.miejscowoscWnLineEdit.clear()
         self.dlg.ulicaWnLineEdit.clear()    
         self.dlg.numerDzialkiLineEdit.clear()
+        self.dlg.numerArkuszaLineEdit.clear()
         
         self.dlg.zalKopiaMapyLineEdit.clear()
         self.dlg.zalMPZPLineEdit.clear()
