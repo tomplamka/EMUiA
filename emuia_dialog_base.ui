@@ -319,6 +319,31 @@ formularz</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>nazwaAdresataLineEdit</tabstop>
+  <tabstop>imieLineEdit</tabstop>
+  <tabstop>nazwiskoLineEdit</tabstop>
+  <tabstop>ulicaLineEdit</tabstop>
+  <tabstop>numerBudynkuLineEdit</tabstop>
+  <tabstop>numerLokaluLineEdit</tabstop>
+  <tabstop>miejscowoscLineEdit</tabstop>
+  <tabstop>kodLineEdit</tabstop>
+  <tabstop>telefonLineEdit</tabstop>
+  <tabstop>emailLineEdit</tabstop>
+  <tabstop>dataWnioskuLineEdit</tabstop>
+  <tabstop>miejscowoscWnLineEdit</tabstop>
+  <tabstop>ulicaWnLineEdit</tabstop>
+  <tabstop>obrebComboBox</tabstop>
+  <tabstop>numerDzialkiLineEdit</tabstop>
+  <tabstop>numerArkuszaLineEdit</tabstop>
+  <tabstop>statusBudowyComboBox</tabstop>
+  <tabstop>zalKopiaMapyLineEdit</tabstop>
+  <tabstop>btnSaveZal1</tabstop>
+  <tabstop>zalMPZPLineEdit</tabstop>
+  <tabstop>btnSaveZal2</tabstop>
+  <tabstop>btnRejestruj</tabstop>
+  <tabstop>btnClearForm</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
